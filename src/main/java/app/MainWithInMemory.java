@@ -66,7 +66,6 @@ public class MainWithInMemory {
         final LoggedInView loggedInView = ChangePasswordUseCaseFactory.create(viewManagerModel,
                 loggedInViewModel, userDataAccessObject);
         views.add(loggedInView, loggedInView.getViewName());
-
         viewManagerModel.setState(signupView.getViewName());
         viewManagerModel.firePropertyChanged();
 
